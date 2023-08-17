@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://www.lufthansa-flynet.com/ -->
+<html lang="en" ng-controller="dlhController" dlh-language="" ng-class="{&#39;dlh-s-deep-site-content&#39;: classes.deepSiteContent, &#39;lock-screen-active&#39;:lockScreenActive, &#39;sThree&#39;: classes.devices.sThree, &#39;sFour&#39;: classes.devices.sFour, &#39;isiOS&#39;: classes.browser.isiOS, &#39;isAndroid&#39;: classes.browser.isAndroid, &#39;isAndroidSDK&#39;: classes.browser.isAndroidSDK, &#39;isiOS7&#39;: classes.browser.isiOS7 }" style="" class="js flexbox flexboxlegacy canvas canvastext no-touch postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil no-ipad no-iphone no-ipod no-appleios positionfixed boxalign boxsizing ng-scope pe-app-loaded pe-page-current-home"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style> 
+   
+  <title>Lufthansa FlyNet</title> 
+  <!--META: GENERIC START--> 
+  <meta name="description" content=""> 
+  <meta name="keywords" content=""> 
+  <meta name="author" content=""> 
+  <meta name="apple-mobile-web-app-capable" content="yes"> 
+  <meta name="version" content="v03.06.00.09"> 
+  <!--META: GENERIC END--> 
+  <!--META: IE START--> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <meta http-equiv="ClearType" content="true"> 
+  <!--META: IE END--> 
+  <!--META: VIEWPORT START (davidbcalhoun.com/2010/viewport-metatag)--> 
+  <meta name="HandheldFriendly" content="true"> 
+  <meta name="MobileOptimized" content="320"> 
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"> 
+  <!--META: VIEWPORT END--> 
+  <!--BRANDING START--> 
+  <link href="http://www.lufthansa-flynet.com/project_media/portal_media/img/branding/favicon.ico" rel="shortcut icon" type="image/icon"> 
+  <link href="http://www.lufthansa-flynet.com/project_media/portal_media/img/branding/favicon.ico" rel="icon" type="image/icon"> 
+  <link href="http://www.lufthansa-flynet.com/project_media/portal_media/img/branding/apple-touch-icon.png" rel="apple-touch-icon"> 
+  <!--BRANDING END--> 
+  <!--CSS: CONCAT START--> 
+  <link href="./Lufthansa FlyNet_files/complete_css.css" media="screen" rel="stylesheet" type="text/css"> 
+  <!--CSS: CONCAT END--> 
+  <!--IFAPI START--> 
+  <script src="./Lufthansa FlyNet_files/inflight.js" type="text/javascript" data-emulator-protocol="https:"></script> 
+  <!--IFAPI END--> 
+  <!--JS: VENDOR START--> 
+  <!--[if IE]>
+	<script src="./project_media/vendor_media/js/html5shiv.js"           type="text/javascript"></script>
+	<script src="./project_media/vendor_media/js/html5shiv-printshiv.js" type="text/javascript"></script>
+	<![endif]--> 
+  <script src="./Lufthansa FlyNet_files/modernizr.js" type="text/javascript"></script> 
+  <script src="./Lufthansa FlyNet_files/respond.min.js" type="text/javascript"></script> 
+  <!--JS: VENDOR END--> 
+  <!--PORTAL ENGINE START--> 
+  <!--http://portal-engine.1uat.com/v1.5.8.1/documentation/#/--> 
+  <script id="portal-engine-js" src="./Lufthansa FlyNet_files/portal-engine.min.js" type="text/javascript"></script> 
+  <!--PORTAL ENGINE END--> 
+  <!--JS VENDOR START--> 
+  <script src="./Lufthansa FlyNet_files/jquery.gsap.min.js" type="text/javascript" id="includeHandler"></script> 
+  <script src="./Lufthansa FlyNet_files/TweenMax.min.js" type="text/javascript" id="includeHandler"></script> 
+  <script src="./Lufthansa FlyNet_files/moment-timezone.js" type="text/javascript" id="includeHandler"></script> 
+  <script src="./Lufthansa FlyNet_files/scrollspy.js" type="text/javascript" id="includeHandler"></script> 
+  <!--JS VENDOR END--> 
+  <meta name="version" content="v03.06.00.09"> 
+  <meta name="version" content="v03.06.00.09">
+ <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sdk/v1/config" src="./Lufthansa FlyNet_files/config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="avod/v1" src="./Lufthansa FlyNet_files/v1.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="aero-panasonic-inflight-streaming" src="./Lufthansa FlyNet_files/aero-panasonic-inflight-streaming.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="kotlin" src="./Lufthansa FlyNet_files/kotlin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="aero-panasonic-inflight-core" src="./Lufthansa FlyNet_files/aero-panasonic-inflight-core.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="kotlinx-serialization-kotlinx-serialization-runtime" src="./Lufthansa FlyNet_files/kotlinx-serialization-kotlinx-serialization-runtime.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="avod/v1/software" src="./Lufthansa FlyNet_files/software.js"></script></head> 
+ <body class="w3c dlh-m-time-of-day dlh-m-time-of-day-morning" data-start-page="home" data-first-page="home"> 
+  <!--MODULE: DLH MOBILE WELCOME LOCK START--> 
+  <widget-welcome wid="widget-welcome" uuid="8" class="pe-widget-applied ng-scope"><div ng-controller="welcomeLockController" class="h-ds-hide ng-scope">
+		<div class="dlh-m-lock-screen itk-h-fixed-overlay" welcome-lock="">
+			<div class="dlh-m-lock-screen__lock" style="background-image: url(project_media/portal_media/img/portal_icons/svg/logo_welcomepage.svg)">
+				<div class="container">
+					<!--LAYOUT: ROW START-->
+					<div class="row">
+						<!--LAYOUT: COL START-->
+						<div class="col-xs-12 h-padding-top--40 dlh-m-lock-screen__text">
+							<h1 class="t-font-face--heading_light t-size--28 t-colour--white h-margin-top--60 h-margin-bottom--20 ng-scope" translate="TXT_WELCOME.TITLE">Welcome to the internet above the clouds</h1>
+							<p class="t-font-face--light t-size--20 t-colour--white ng-scope" translate="TXT_WELCOME.COPY">We provide you with interesting information, entertainment and destination-related content.</p>
+							<div class="dlh-m-lock-screen__lock__button t-font-face--light t-size--20 t-colour--white ng-scope" translate="TXT_WELCOME.CTA">Swipe to enter</div>
+						</div>
+						<!--LAYOUT: COL END-->
+					</div>
+					<!--LAYOUT: ROW START-->
+				</div>
+				<div class="dlh-m-lock-screen__lock__overlay"></div>
+			</div>
+		</div>
+	</div></widget-welcome> 
+  <!--MODULE: DLH MOBILE WELCOME LOCK END--> 
+  <!--ENGINE: DLH ae-master-page START--> 
+  <div class="pe-master-page"> 
+   <!--WRAPPER START--> 
+   <div id="itk-wrapper" class="h-height-100 ng-isolate-scope" pe-media-queries="" mq-value="media.breakpoint" mq-default-value="&#39;xs&#39;" mq-queries="[
+				{&quot;query&quot;: &quot;screen and (min-width:480px)&quot;, &quot;value&quot;: &quot;xs&quot;},
+				{&quot;query&quot;: &quot;screen and (min-width:768px)&quot;, &quot;value&quot;: &quot;sm&quot;},
+				{&quot;query&quot;: &quot;screen and (min-width:992px)&quot;, &quot;value&quot;: &quot;md&quot;},
+				{&quot;query&quot;: &quot;screen and (min-width:1280px)&quot;, &quot;value&quot;: &quot;lg&quot;}
+				]" ng-init="media = { breakpoint: &#39;xs&#39; }"> 
+    <a class="itk-navigation itk-named-anchor" id="itk-top-anchor"></a> 
+    <!--MODULE: DLH-HEADER START--> 
+    <header class="dlh-m-header ng-scope" ng-controller="headerController" ng-class="{
+			&#39;dlh-s__scroll--down&#39; : classes.scrollDown,
+			&#39;dlh-s__scroll--top&#39;  : classes.scrollTop,
+			&#39;dlh-s__scroll--up&#39;   : classes.scrollUp,
+			&#39;dlh-s__sticky&#39;       : classes.scrollSticky
+			}"> 
+     <!--MODULE: DLH-HEADER STATIC TOP START--> 
+     <div class="dlh-m-header__static-top" ng-class="{
+				&#39;dlh-s-nav__main-nav--show&#39; : classes.mainNavOpen,
+				&#39;dlh-s-nav__user-nav--show&#39; : classes.userNavOpen
+				}"> 
+      <!--LAYOUT: CONTAINER START--> 
+      <!--MODULE: DLH-NAV START--> 
+      <div class="container dlh-m-nav  ng-scope" ng-controller="navController"> 
+       <!--LAYOUT: ROW START--> 
+       <widget-navbar-main wid="widget-navbar-main" uuid="9" class="pe-widget-applied ng-scope"><div class="row dlh-header-background">
+
+    <!--LAYOUT: COL START-->
+    <div class="col-xs-12 dlh-m-header__static-top__navbar-header h-padding--0">
+
+        <!--LAYOUT: COL START-->
+        <div class="col-xs-6 col-sm-4 ">
+            <a href="http://www.lufthansa-flynet.com/" back-to-top="" class="dlh-m-header__static-top__navbar-header__logo itk-h-replaced ng-binding" style="background-image: url(&#39;project_media/portal_media/img/portal_modules/header/logo.svg&#39;);">Lufthansa</a>
+        </div>
+        <!--LAYOUT: COL END-->
+
+        <!--LAYOUT: COL START-->
+        <button type="button" class="dlh-m-header__static-top__btn dlh-m-header__static-top__btn--user col-xs-3 col-sm-1 col-sm-offset-6" ng-click="params.toggleUserNav()">
+            <div>
+                <span class="itk-h-screen-reader-hidden">Toggle Login</span>
+                <span class="dlh-m-icon dlh-m-icon--user"></span>
+            </div>
+        </button>
+        <!--LAYOUT: COL END-->
+
+        <!--LAYOUT: COL START-->
+        <button type="button" class="dlh-m-header__static-top__btn dlh-m-header__static-top__btn--main col-xs-3 col-sm-1 " ng-click="params.toggleMainNav()">
+        </button>
+        <!--LAYOUT: COL END-->
+
+    </div>
+    <!--LAYOUT: COL END-->
+
+</div>
+
+
+<style type="text/css" class="ng-binding">
+
+    .dlh-m-section-backgrounds__img.mylufthansa {
+        background-image:url(project_media/portal_media/img/portal_modules/section_backgrounds/mylufthansa.jpg) !important;
+    }
+
+    .dlh-m-section-backgrounds__img.shopping {
+        background-image:url(project_media/portal_media/img/portal_modules/section_backgrounds/shopping.jpg) !important;
+    }
+
+    .dlh-m-section-backgrounds__img.entertainment {
+        background-image:url(project_media/portal_media/img/portal_modules/section_backgrounds/entertainment.jpg) !important;
+    }
+
+    .dlh-m-section-backgrounds__img.news {
+        background-image:url(project_media/portal_media/img/portal_modules/section_backgrounds/news.jpg) !important;
+    }
+
+    .dlh-m-section-backgrounds__img.companyandservice {
+        background-image:url(project_media/portal_media/img/portal_modules/section_backgrounds/companyandservice.jpg) !important;
+    }
+
+</style></widget-navbar-main> 
+       <!--LAYOUT: ROW END--> 
+       <!--MODULE: DLH-NAV MAIN NAV START--> 
+       <widget-navbar-pagenav wid="widget-navbar-pagenav" uuid="10" class="pe-widget-applied ng-scope"><nav id="PageNav" class="dlh-m-nav__main-nav" role="navigation">
+    <!--LAYOUT: ROW START-->
+    <div class="row dlh-m-nav--background--blue">
+        <!--LAYOUT: COL START-->
+        <div class="col-xs-12">
+            <ul class="dlh-m-nav__main-nav__list itk-m-list-unsigned itk-h-clearfix">
+                <li>
+                    <a class="t-size--16 t-colour--dlh-grey t-colour--white--active t-decoration--no-und h-trans-point3s h-ds-editable-field ng-scope" active-link="" active-link-parent="" ng-href="#!/home/MyLufthansa" ng-click="params.navScroll($event, &#39;MyLufthansa&#39;, &#39;/home/MyLufthansa&#39;)" href="http://www.lufthansa-flynet.com/#!/home/MyLufthansa">
+                        <span class="dlh-m-icon dlh-m-icon--anchor-down"></span><span translate="TXT_NAV.MY.LUFTHANSA" class="ng-scope">My Lufthansa</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="t-size--16 t-colour--dlh-grey t-colour--white--active t-decoration--no-und h-trans-point3s h-ds-editable-field ng-scope" active-link="" active-link-parent="" ng-href="#!/home/News" ng-click="params.navScroll($event, &#39;News&#39;, &#39;/home/News&#39;)" href="http://www.lufthansa-flynet.com/#!/home/News">
+                        <span class="dlh-m-icon dlh-m-icon--anchor-down"></span><span translate="TXT_NAV.NEWS" class="ng-scope">News</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--LAYOUT: COL END-->
+    </div>
+    <!--LAYOUT: ROW END-->
+</nav></widget-navbar-pagenav> 
+       <!--MODULE: DLH-NAV MAIN NAV END--> 
+       <!--MODULE: DLH-NAV USER NAV START--> 
+       <widget-navbar-usernav wid="widget-navbar-usernav" uuid="11" class="pe-widget-applied ng-scope"><nav id="UserNav" class="dlh-m-nav__user-nav" role="navigation">
+    <!--LAYOUT: ROW START-->
+    <div class="row dlh-m-nav--background--blue">
+        <!--LAYOUT: COL START-->
+        <div class="col-sm-5">
+            
+        </div>
+        <!--LAYOUT: COL END-->
+        <!--LAYOUT: COL START-->
+        <div class="col-sm-7">
+            <div class="dlh-m-nav__user-nav__language t-size--16 t-colour--dlh-grey">
+                <div class="dlh-m-nav__user-nav__language__label itk-h-text-right h-padding-right--0 h-ds-editable-field ng-scope" translate="TXT_NAV.LANGUAGE.PREFERRED">My preferred language:</div>
+                <div class="dlh-m-nav__user-nav__language__group itk-h-text-right itk-h-clearfix">
+                    <button type="button" ng-class="{&#39;dlh-s-current&#39;: params.language == &#39;en_GB&#39;}" class="dlh-m-nav--background--blue h-active-background--white dlh-m-nav__user-lang-button t-size--16 pull-right h-trans-point3s h-ds-editable-field ng-scope dlh-s-current" ng-click="params.switchLang(&#39;en_GB&#39;);classes.userNavOpen = !classes.userNavOpen;classes.mainNavOpen = false" translate="TXT_NAV.LANGUAGE.ENGLISH" style="">English</button>
+                    <button type="button" ng-class="{&#39;dlh-s-current&#39;: params.language == &#39;de_DE&#39;}" class="dlh-m-nav--background--blue h-active-background--white dlh-m-nav__user-lang-button t-size--16 pull-right h-trans-point3s h-ds-editable-field ng-scope" ng-click="params.switchLang(&#39;de_DE&#39;);classes.userNavOpen = !classes.userNavOpen;classes.mainNavOpen = false" translate="TXT_NAV.LANGUAGE.GERMAN">German</button>
+                </div>
+            </div>
+        </div>
+        <!--LAYOUT: COL END-->
+    </div>
+    <!--LAYOUT: ROW END-->
+</nav></widget-navbar-usernav> 
+       <!--MODULE: DLH-NAV MAIN NAV END--> 
+      </div> 
+      <!--MODULE: DLH-NAV END--> 
+     </div> 
+     <!--MODULE: DLH-HEADER STATIC TOP END--> 
+     <!--MODULE: DLH-HEADER INFOBAR START--> 
+     <div class="dlh-m-header__infobar" id="infobar"> 
+      <!--LAYOUT: CONTAINER START--> 
+      <div class="container dlh-m-header--background--black-05"> 
+       <!--MODULE: DLH INFO-BAR START--> 
+       <div class="dlh-info-bar"> 
+        <!--LAYOUT: ROW START--> 
+        <div class="row dlh-info-bar-row"> 
+         <!--LAYOUT: COL START--> 
+         <div class="col-xs-6 col-sm-4 col-md-9"> 
+          <div class="dlh-info-bar__travel-info dlh-info-bar__travel-info--header ng-scope" pe-flight-data=""> 
+           <!-- ngIf: templateProcessingState == 'loaded' --><div ng-if="templateProcessingState == &#39;loaded&#39;" class="ng-scope"> 
+            <!--COLLECTION: peFlightDataListingsModule START" pew-swiper--> 
+            <!--MODULE INFOBAR FLIGHT STATUS - MOBILE START--> 
+            <!-- ngIf: media.breakpoint == 'xs' || media.breakpoint == 'sm' --> 
+            <!--MODULE INFOBAR FLIGHT STATUS - MOBILE END--> 
+            <!--MODULE INFOBAR FLIGHT STATUS - DESKTOP START--> 
+            <!-- ngIf: media.breakpoint != 'xs' && media.breakpoint != 'sm' --><ul class="row h-list--unsigned ng-scope" ng-if="media.breakpoint != &#39;xs&#39; &amp;&amp; media.breakpoint != &#39;sm&#39;"> 
+             <!--LAYOUT: COL START--> 
+             <!-- ngIf: flightData.timeToDestination --><li ng-if="flightData.timeToDestination" class="dlh-info-bar__travel-info__arrival-time col-xs-12 col-md-4 t-size--16 t-colour--white ng-scope"> <span class="dlh-m-icon dlh-m-icon--arrival-infobar hidden-xs"></span> <span class="h-display--inline-block h-aligment--vertical-middle h-ds-dynamic-field t-font-face--regular" data-ds-label="Disabled - dynamic"> <span class="t-size--14 t-colour--white ng-scope" translate="TXT_INFOBAR.ETA">Estimated arrival time</span> <br> <span class="t-font-face--bold ng-binding">5:07</span> <span class="t-size--12 t-font-face--bold ng-binding"> pm</span> </span> </li><!-- end ngIf: flightData.timeToDestination --> 
+             <!--LAYOUT: COL END--> 
+             <!--LAYOUT: COL START--> 
+             <!-- ngIf: flightData.timeToDestination --><li ng-if="flightData.timeToDestination" class="dlh-info-bar__travel-info__time-remaining col-xs-12 col-md-4 t-size--16 t-colour--white ng-scope"> <span class="dlh-m-icon dlh-m-icon--time-infobar hidden-xs"></span> <span class="h-display--inline-block h-aligment--vertical-middle h-ds-dynamic-field t-font-face--regular" data-ds-label="Disabled - dynamic"> <span class="t-size--14 t-colour--white ng-scope" translate="TXT_INFOBAR.FLYING.TIME">Flying time</span> <br> <span class="t-font-face--bold ng-binding"> 5:11 </span> <span class="t-size--12 ng-scope" translate="TXT_INFOBAR.REMAINING"> h remaining</span> </span> </li><!-- end ngIf: flightData.timeToDestination --> 
+             <!--LAYOUT: COL END--> 
+             <!--LAYOUT: COL START--> 
+             <!--COLLECTION: pe-exconnect START"--> 
+             <li class="dlh-info-bar__travel-info__connectivity col-xs-12 col-md-4 t-size--16 t-colour--white ng-scope" pe-ex-connect-status=""> <span class="dlh-m-icon dlh-m-icon--connectivity-infobar hidden-xs connection-enabled" ng-class="{&#39;connection-enabled&#39;: exConnectStatus.globalConnectionEnabled,&#39;connection-disabled&#39;:!exConnectStatus.globalConnectionEnabled }"></span> <span class="h-display--inline-block h-aligment--vertical-middle h-ds-dynamic-field t-font-face--regular" data-ds-label="Disabled - dynamic"> <span class="t-size--14 t-colour--white ng-scope" translate="TXT_INFOBAR.CONNECTIVITY.FLIGHT">Connectivity on this flight</span> <br> <!-- ngIf: exConnectStatus.globalConnectionEnabled --><span class="t-size--12 ng-scope" ng-if="exConnectStatus.globalConnectionEnabled" translate="TXT_INFOBAR.CONNECTION.AVAILABLE">Available</span><!-- end ngIf: exConnectStatus.globalConnectionEnabled --> <!-- ngIf: !exConnectStatus.globalConnectionEnabled --> </span> </li> 
+             <!--COLLECTION: pe-exconnect END"--> 
+             <!--LAYOUT: COL END--> 
+            </ul><!-- end ngIf: media.breakpoint != 'xs' && media.breakpoint != 'sm' --> 
+            <!--LAYOUT: ROW END--> 
+            <!--MODULE INFOBAR FLIGHT STATUS - DESKTOP END--> 
+           </div><!-- end ngIf: templateProcessingState == 'loaded' --> 
+           <!--LOADED END--> 
+          </div> 
+          <!--COLLECTION: peFlightDataListingsModule END--> 
+         </div> 
+         <!--LAYOUT: COL END--> 
+         <!--LAYOUT: COL START--> 
+         <div class="col-xs-6 col-sm-8 col-md-3 dlh-wisp-button-container"> 
+          <widget-wisp-button wid="widget-wisp-button" uuid="12" class="pe-widget-applied ng-scope"><div class="dlh-info-bar__hotspot ng-scope" dlh-connection-href="" dlh-analytics="" ng-click="logExConnectAnalytics(params.systemLang, hrefUrl)" pe-ex-connect-status="" website="https://portal.inflight-wifi.com?lang=">
+	<!-- ngIf: standAloneRackIssue -->
+	<!-- ngIf: !standAloneRackIssue --><div ng-if="!standAloneRackIssue" class="ng-scope">
+		<a dlh-analytics="" ng-click="logExConnectAnalytics(params.systemLang, hrefUrl)" class="dlh-info-bar__hotspot__btn t-font-face--regular t-decoration--no-und h-trans-1s" ng-href="https://portal.inflight-wifi.com?lang=en_GB" target="_blank" href="https://portal.inflight-wifi.com/?lang=en_GB">
+			<span class="dlh-m-icon dlh-m-icon--wifi" style="background-image: url(project_media/portal_media/img/portal_icons/bt_hotspot.png)"></span> <span class="h-ds-editable-field ng-scope" translate="TXT_INFOBAR.HOTSPOT.ACCESS.TXT">HotSpot Access</span>
+		</a>
+	</div><!-- end ngIf: !standAloneRackIssue -->
+</div></widget-wisp-button> 
+         </div> 
+         <!--LAYOUT: COL END--> 
+        </div> 
+        <!--LAYOUT: ROW END--> 
+       </div> 
+       <!--MODULE: DLH INFO-BAR END--> 
+      </div> 
+      <!--LAYOUT: CONTAINER END--> 
+     </div> 
+     <!--MODULE: DLH-HEADER INFOBAR END--> 
+    </header> 
+    <!--MODULE: DLH HEADER END--> 
+    <div id="dlh-m-homepage-container"> 
+     <section class="dlh-m-section dlh-m-section-backgrounds dlh-m-section-backgrounds--destinations ng-scope" id="Destination" pe-flight-data=""> 
+      <!--MODULE: DLH SECTION - BACKGROUND IMAGES START--> 
+      <div class="dlh-m-section-backgrounds__img destination  chi"></div> 
+      <!--MODULE: DLH SECTION - BACKGROUND IMAGES END--> 
+      <!--MODULE: DLH SECTION - CONTENT START--> 
+      <div class="dlh-m-section-backgrounds__content h-padding-top--60"> 
+       <!--LAYOUT: CONTAINER START--> 
+       <div class="container"> 
+        <!--LAYOUT: ROW START--> 
+        <div class="row"> 
+         <!--LAYOUT: COL START--> 
+         <div class="col-xs-12"> 
+          <!--MODULE: DLH INFO-BAR START--> 
+          <div class="dlh-info-bar "> 
+           <!--LAYOUT: ROW START--> 
+           <div class="row"> 
+            <!--LAYOUT: COL START--> 
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 h-margin-bottom--10"> 
+             <!-- ngIf: templateProcessingState == 'loaded' --><div ng-if="templateProcessingState == &#39;loaded&#39;" class="ng-scope"> 
+              <h2 class="t-size--28 t-colour--white h-margin-top--10 h-ds-dynamic-field t-font-face--heading_light ng-binding" data-ds-label="Disabled - dynamic">Chicago IL  (ORD)</h2> 
+              <span class="dlh-info-bar__weather-line-1 t-size--16 t-colour--white t-style--strong h-ds-dynamic-field" data-ds-label="Disabled - dynamic"> <span class="t-font-face--bold ng-binding"> 11:56 </span> <span class="t-size--12 t-style--normal h-ds-dynamic-field" data-ds-label="Disabled - dynamic"> <span class="t-transform--lowercase ng-binding"> AM </span> <span translate="TXT_INFOBAR.LOCAL.TIME" class="ng-scope">local time</span> </span> </span> 
+              <div pe-destination-current-weather="" ng-init="options = {&#39;numOfDays&#39;: 1}" weather-config="options" class="ng-scope"> 
+               <!-- ngIf: templateProcessingState == 'loaded' --> 
+              </div> 
+             </div><!-- end ngIf: templateProcessingState == 'loaded' --> 
+            </div> 
+            <!--LAYOUT: COL END--> 
+            <!--LAYOUT: COL START--> 
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-6"> 
+             <div class="dlh-info-bar__travel-info dlh-info-bar__travel-info--page"> 
+              <!-- ngIf: templateProcessingState == 'loaded' --><div ng-if="templateProcessingState == &#39;loaded&#39;" class="ng-scope"> 
+               <!--COLLECTION: peFlightDataListingsModule START--> 
+               <!--MODULE INFOBAR FLIGHT STATUS PAGE - MOBILE START--> 
+               <!-- ngIf: media.breakpoint != 'lg' --><div class="h-overflow-hidden ng-scope dlh-info-bar__travel-info--animation" ng-if="media.breakpoint != &#39;lg&#39;" ng-class="{&#39;dlh-info-bar__travel-info--animation&#39;: flightData.timeToDestination}"> 
+                <ul class="row h-list--unsigned"> 
+                 <!--LAYOUT: COL START pew-swiper-slide--> 
+                 <!-- ngIf: flightData.timeToDestination --><li ng-if="flightData.timeToDestination" class="dlh-info-bar__travel-info__arrival-time col-xs-12 col-md-12 col-lg-4 t-size--16 t-colour--white ng-scope"> <span class="dlh-m-icon dlh-m-icon--arrival-flight-info hidden-xs"></span> <span class="h-display--inline-block h-aligment--vertical-middle h-ds-dynamic-field" data-ds-label="Disabled - dynamic"> <span class="t-size--12 t-colour--white-05 ng-scope" translate="TXT_INFOBAR.ETA">Estimated arrival time</span> <br> <span class="t-font-face--bold ng-binding">5:07</span> <span class="t-size--12 t-font-face--bold ng-binding"> pm</span> </span> </li><!-- end ngIf: flightData.timeToDestination --> 
+                 <!--LAYOUT: COL END--> 
+                 <!--LAYOUT: COL START--> 
+                 <!-- ngIf: flightData.timeToDestination --><li ng-if="flightData.timeToDestination" class="dlh-info-bar__travel-info__time-remaining col-xs-12 col-md-12 col-lg-4 t-size--16 t-colour--white ng-scope"> <span class="dlh-m-icon dlh-m-icon--time-flight-info hidden-xs"></span> <span class="h-display--inline-block h-aligment--vertical-middle h-ds-dynamic-field" data-ds-label="Disabled - dynamic"> <span class="t-size--12 t-colour--white-05 ng-scope" translate="TXT_INFOBAR.FLYING.TIME">Flying time</span> <br> <span class="t-font-face--bold ng-binding"> 5:11 </span> <span class="t-size--12 ng-scope" translate="TXT_INFOBAR.REMAINING"> h remaining</span> </span> </li><!-- end ngIf: flightData.timeToDestination --> 
+                 <!--LAYOUT: COL END--> 
+                 <!--LAYOUT: COL START--> 
+                 <!--COLLECTION: pe-exconnect START"--> 
+                 <li class="dlh-info-bar__travel-info__connectivity col-xs-12 col-md-12 col-lg-4 t-size--16 t-colour--white ng-scope" pe-ex-connect-status=""> <span class="dlh-m-icon dlh-m-icon--connectivity-flight-info connection-enabled" ng-class="{&#39;connection-enabled&#39;: exConnectStatus.globalConnectionEnabled,&#39;connection-disabled&#39;:!exConnectStatus.globalConnectionEnabled }"></span> <span class="h-display--inline-block h-aligment--vertical-middle h-ds-dynamic-field" data-ds-label="Disabled - dynamic"> <span class="t-size--12 t-colour--white-05"> <span translate="TXT_INFOBAR.CONNECTIVITY" class="ng-scope">Connectivity</span> <span class="hidden-sm hidden-xs ng-scope" translate="TXT_INFOBAR.CONNECTIVITY.ON.FLIGHT">on this flight</span> </span> <br> <!-- ngIf: exConnectStatus.globalConnectionEnabled --><span ng-if="exConnectStatus.globalConnectionEnabled" class="ng-scope"> <span class="t-size--12 ng-scope" translate="TXT_INFOBAR.CONNECTION.AVAILABLE">Available</span> </span><!-- end ngIf: exConnectStatus.globalConnectionEnabled --> <!-- ngIf: !exConnectStatus.globalConnectionEnabled --> </span> </li> 
+                 <!--COLLECTION: pe-exconnect END"--> 
+                 <!--LAYOUT: COL END--> 
+                 <!--DUPLICATE OF FIRST SLIDE TO ALLOW LOOPING OF ANIMATION--> 
+                 <!--LAYOUT: COL START pew-swiper-slide--> 
+                 <!-- ngIf: flightData.timeToDestination --><li ng-if="flightData.timeToDestination" class="dlh-info-bar__travel-info__arrival-time col-xs-12 col-md-12 col-lg-4 t-size--16 t-colour--white ng-scope"> <span class="dlh-m-icon dlh-m-icon--arrival-flight-info hidden-xs"></span> <span class="h-display--inline-block h-aligment--vertical-middle h-ds-dynamic-field" data-ds-label="Disabled - dynamic"> <span class="t-size--12 t-colour--white-05 ng-scope" translate="TXT_INFOBAR.ETA">Estimated arrival time</span> <br> <span class="t-font-face--bold ng-binding"> 5:07 </span> <span class="t-size--12 ng-binding"> pm </span> </span> </li><!-- end ngIf: flightData.timeToDestination --> 
+                 <!--LAYOUT: COL END--> 
+                 <!--DUPLICATE OF FIRST SLIDE TO ALLOW LOOPING OF ANIMATION--> 
+                </ul> 
+               </div><!-- end ngIf: media.breakpoint != 'lg' --> 
+               <!--MODULE INFOBAR FLIGHT STATUS - MOBILE END--> 
+               <!--MODULE INFOBAR FLIGHT STATUS PAGE - DESKTOP START--> 
+               <!-- ngIf: media.breakpoint == 'lg' --> 
+               <!--LAYOUT: ROW END--> 
+               <!--MODULE INFOBAR FLIGHT STATUS - DESKTOP END--> 
+              </div><!-- end ngIf: templateProcessingState == 'loaded' --> 
+              <!--LOADED END--> 
+             </div> 
+             <!--COLLECTION: peFlightDataListingsModule END--> 
+            </div> 
+            <!--LAYOUT: COL END--> 
+            <!--LAYOUT: COL START--> 
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2"> 
+             <!--COLLECTION: pe-network-connectivity START"--> 
+             <widget-wisp-button wid="widget-wisp-button-2" class="dlh-wisp-button-container pe-widget-applied ng-scope" uuid="13"><div class="dlh-info-bar__hotspot ng-scope" dlh-connection-href="" dlh-analytics="" ng-click="logExConnectAnalytics(params.systemLang, hrefUrl)" pe-ex-connect-status="" website="https://portal.inflight-wifi.com?lang=">
+	<!-- ngIf: standAloneRackIssue -->
+	<!-- ngIf: !standAloneRackIssue --><div ng-if="!standAloneRackIssue" class="ng-scope">
+		<a dlh-analytics="" ng-click="logExConnectAnalytics(params.systemLang, hrefUrl)" class="dlh-info-bar__hotspot__btn t-font-face--regular t-decoration--no-und h-trans-1s" ng-href="https://portal.inflight-wifi.com?lang=en_GB" target="_blank" href="https://portal.inflight-wifi.com/?lang=en_GB">
+			<span class="dlh-m-icon dlh-m-icon--wifi" style="background-image: url(project_media/portal_media/img/portal_icons/bt_hotspot.png)"></span> <span class="h-ds-editable-field ng-scope" translate="TXT_INFOBAR.HOTSPOT.ACCESS.TXT">HotSpot Access</span>
+		</a>
+	</div><!-- end ngIf: !standAloneRackIssue -->
+</div></widget-wisp-button> 
+             <!--COLLECTION: pe-network-connectivity END"--> 
+            </div> 
+            <!--LAYOUT: COL END--> 
+           </div> 
+           <!--LAYOUT: ROW END--> 
+          </div> 
+          <!--MODULE: DLH INFO-BAR END--> 
+          <header class="dlh-m-section__header dlh-m-section__header--header t-header-h1 t-colour--white t-font-face--heading_bold"> 
+           <div> 
+            <div bindonce="" class="dlh-m-greeting-wrap ng-isolate-scope" data-current-time-at-destination="11:56" data-destination-city="Chicago IL " data-language="en_GB">
+	<span class="dlh-m-greeting">
+		<span class="dlh-m-greeting-pre-text t-text-shadow--1">
+			<span translate="TXT_GREETING.GOOD" class="ng-scope">Good</span>
+			<span class="dlh-m-greeting-time-of-day dlh-m-greeting-time-of-day-text dlh-m-greeting-time-of-day-morning t-text-shadow--1 ng-scope" ng-show="currentTimeOfDay == &#39;morning&#39;" translate="TXT_GREETING.MORNING">morning,</span>
+			<span class="dlh-m-greeting-time-of-day dlh-m-greeting-time-of-day-text dlh-m-greeting-time-of-day-afternoon t-text-shadow--1 ng-scope ng-hide" ng-show="currentTimeOfDay == &#39;afternoon&#39;" translate="TXT_GREETING.AFTERNOON">afternoon,</span>
+			<span class="dlh-m-greeting-time-of-day dlh-m-greeting-time-of-day-text dlh-m-greeting-time-of-day-evening t-text-shadow--1 ng-scope ng-hide" ng-show="currentTimeOfDay == &#39;evening&#39;" translate="TXT_GREETING.EVENING">evening,</span>
+		</span>
+		<span class="dlh-mgreeting-destination-name t-text-shadow--1 ng-binding">Chicago IL </span>
+	</span>
+</div> 
+           </div> 
+          </header> 
+          <!--MODULE: DLH SECTION - DESTINATION START--> 
+          <!--LAYOUT: ROW START--> 
+          <div class="row"> 
+           <!--LAYOUT: COL START--> 
+           <div class="col-xs-12"> 
+            <json-editor-destination wid="swiper-destination" uuid="14" class="pe-widget-applied ng-scope"><!--MODULE: DLH TILE GRID START-->
+<div class="dlh-m-tile-grid swiper-container ng-scope swiper-container-horizontal" dlh-grid="" breakpoint="params.breakPoint" pew-swiper="" dlh-tiles-destination="" grid-flight-data="contGrid.fd" iata="CHI" destination-city="Chicago IL " swiper-opts="{
+			setWrapperSize         : true,
+			nextButton             : &#39;.dlh-m-tile-grid__btn-nav--next--destination&#39;,
+			prevButton             : &#39;.dlh-m-tile-grid__btn-nav--previous--destination&#39;,
+			pagination             : &#39;#dlh-m-swiper__slides__pager--destination-default&#39;,
+			paginationActiveClass  : &#39;dlh-s-active&#39;,
+			paginationClickable    : true,
+			paginationVisibleClass : &#39;dlh-s-active&#39;,
+			slidesPerView          : &#39;auto&#39;,
+			slidesPerColumnFill    : &#39;column&#39;,
+			bulletClass            : &#39;dlh-m-swiper__slides__pager__dot&#39;,
+			bulletActiveClass      : &#39;dlh-s-active&#39;,
+			slidesPerColumn        : contGrid.gridColumns
+		}">
+
+	<div class="swiper-wrapper dlh-m-tile-grid__wrapper ng-scope" pew-swiper-wrapper="" dlh-swiper-row-sorter="" row-array="contTilesDestination.tileData" breakpoint="params.breakPoint" style="width: 960px;">
+
+		<!-- ngRepeat: tile in rowCont.tileData --><div class="swiper-slide pull-left v2 ng-scope swiper-slide-active" ng-repeat="tile in rowCont.tileData" style="">
+			<!-- ngIf: contGrid.fd --><div class="dlh-m-tile ng-scope ng-isolate-scope dlh-m-tile--image dlh-m-tile--no-gradient" ng-if="contGrid.fd" dlh-tile-item="" tile="tile" index="$index" deeplink-page="destination" breakpoint="params.breakPoint" current-lang="langCtrl.language.code" fd="contGrid.fd" dlh-analytics="" ng-click="logExtras(&#39;Destination&#39;, systemLang, tile, hrefUrl)"><div dlh-connection-href="" pe-ex-connect-status="" website="https://portal.inflight-wifi.com?lang=" class="ng-scope">
+
+	<!-- ngIf: standAloneRackIssue -->
+
+	<!-- ngIf: !standAloneRackIssue --><div ng-if="!standAloneRackIssue" class="ng-scope" style="">
+	<a class="dlh-m-tile__container t-decoration--no-und t-colour--white h-overide--tap-highlight" ng-href="https://portal.inflight-wifi.com?lang=en_GB" ng-class="{&#39;t-colour--white&#39;: (cont.tile.colour == &#39;BLUE&#39; || cont.tile.colour == &#39;ORANGE&#39; || cont.tile.image), &#39;t-colour--dlh-blue&#39;: (cont.tile.colour == &#39;WHITE&#39; &amp;&amp; !cont.tile.image)}" target="_blank" href="https://portal.inflight-wifi.com/?lang=en_GB">
+	  <div class="dlh-m-tile__container__background dlh-m-tile__container__background--image" ng-class="{&#39;dlh-m-tile__container__background--image&#39;: cont.tile.image}" ng-style="cont.backgroundStyle" style="background-image: url(&quot;project_media/portal_media/img/portal_modules/tiles/Flynet_English.jpg&quot;);"></div>
+	  <div class="dlh-m-tile__container__content">
+	    <!-- ngIf: !cont.tile.hidetitle -->
+	    <div class="dlh-m-tile__container__content__copy t-font-face--light ng-binding" ng-bind-html="cont.tile.subtitle|dlhNewline"></div>
+	  </div>
+	</a>
+	</div><!-- end ngIf: !standAloneRackIssue -->
+
+</div></div><!-- end ngIf: contGrid.fd -->
+		</div><!-- end ngRepeat: tile in rowCont.tileData --><div class="swiper-slide pull-left v2 ng-scope swiper-slide-next" ng-repeat="tile in rowCont.tileData">
+			<!-- ngIf: contGrid.fd --><div class="dlh-m-tile ng-scope ng-isolate-scope dlh-m-tile--blank dlh-m-tile--weather" ng-if="contGrid.fd" dlh-tile-item="" tile="tile" index="$index" deeplink-page="destination" breakpoint="params.breakPoint" current-lang="langCtrl.language.code" fd="contGrid.fd" dlh-analytics="" ng-click="logExtras(&#39;Destination&#39;, systemLang, tile, hrefUrl)"><a ng-href="#/destination/media/WEATHER/item/0" class="dlh-m-tile__container t-decoration--no-und t-colour--white h-overide--tap-highlight ng-scope" href="http://www.lufthansa-flynet.com/#/destination/media/WEATHER/item/0">
+	<div class="dlh-m-tile__container__background"></div>
+	<div class="dlh-m-tile__container__content">
+		<div class="dlh-m-tile__container__content__title t-font-face--heading_bold ng-binding" ng-bind-html="cont.tile.title|dlhNewline">Weather forecast</div>
+		<div class="dlh-m-tile__container__content__copy t-font-face--light ng-binding">Chicago IL </div>
+		<div>
+			<div pe-destination-current-weather="" weather-config="{&#39;numOfDays&#39;: 1}" class="ng-scope">
+				<!-- ngRepeat: weatherData in destinationCurrentWeatherData -->
+			</div>
+		</div>
+
+
+	</div>
+</a></div><!-- end ngIf: contGrid.fd -->
+		</div><!-- end ngRepeat: tile in rowCont.tileData --><div class="swiper-slide pull-left v2 ng-scope" ng-repeat="tile in rowCont.tileData">
+			<!-- ngIf: contGrid.fd --><div class="dlh-m-tile ng-scope ng-isolate-scope dlh-m-tile--image dlh-m-onemedia no-opacity" ng-if="contGrid.fd" dlh-tile-item="" tile="tile" index="$index" deeplink-page="destination" breakpoint="params.breakPoint" current-lang="langCtrl.language.code" fd="contGrid.fd" dlh-analytics="" ng-click="logExtras(&#39;Destination&#39;, systemLang, tile, hrefUrl)"><div class="dlh-m-tile dlh-m-tile--image h-margin-bottom--4 dlh-m-onemedia no-opacity dlh-ds-one-media--tile ng-scope" pe-one-media-banner="" om-options="{
+    icao: &#39;DLH&#39;,
+    height: cont.tile.height,
+    width: cont.tile.width,
+    zonePath: cont.tile.zone_path
+  }">
+  <!-- ngIf: templateProcessingState == 'loaded' --><div ng-if="templateProcessingState == &#39;loaded&#39;" class="ng-scope">
+    <!-- ngIf: banner.destination_type === 'url' --><a class="dlh-m-tile__container t-decoration--no-und t-colour--white h-overide--tap-highlight ng-scope" ng-if="banner.destination_type === &#39;url&#39;" ng-href="http://services.inflightpanasonic.aero/inflight/services/one_media/v1/click?redirect=https%3A%2F%2Fflylufthansa.compensaid.com%2F&amp;ad_id=490313&amp;zone_path=b_destination_tile1_en&amp;language_id=" target="_blank" href="http://services.inflightpanasonic.aero/inflight/services/one_media/v1/click?redirect=https%3A%2F%2Fflylufthansa.compensaid.com%2F&amp;ad_id=490313&amp;zone_path=b_destination_tile1_en&amp;language_id=">
+      <div class="dlh-m-tile__container__background dlh-m-tile__container__background--image" data-ds-label="Disabled - One Media" ng-style="{&#39;background-image&#39;: &#39;url(&#39;+banner.content_url +&#39;)&#39;}" style="background-image: url(&quot;http://services.inflightpanasonic.aero/inflight/services/one_media/v1/image?img=creatives/13295-32345/banner-13295-32345-230x230.jpg&amp;ad_id=490313&amp;zone_path=b_destination_tile1_en&amp;language_id=&quot;);"></div>
+    </a><!-- end ngIf: banner.destination_type === 'url' -->
+    <!-- ngIf: banner.destination_type !== 'url' -->
+  </div><!-- end ngIf: templateProcessingState == 'loaded' -->
+</div></div><!-- end ngIf: contGrid.fd -->
+		</div><!-- end ngRepeat: tile in rowCont.tileData -->
+	</div>
+	<!--SWIPER WRAPPER END-->
+
+	<a class="dlh-m-tile-grid__btn-nav--previous dlh-m-tile-grid__btn-nav--previous--destination swiper-button-disabled btn-disabled" ng-click="swiper.swipePrev()" ng-class="{ &#39;btn-disabled&#39; : swiper.isBeginning}">
+		<span class="dlh-m-icon dlh-m-icon--swiper-previous"></span>
+	</a>
+	<a class="dlh-m-tile-grid__btn-nav--next dlh-m-tile-grid__btn-nav--next--destination swiper-button-disabled btn-disabled" ng-click="swiper.swipeNext()" ng-class="{ &#39;btn-disabled&#39; : swiper.isEnd}">
+		<span class="dlh-m-icon dlh-m-icon--swiper-next"></span>
+	</a>
+
+</div>
+<!--MODULE: DLH TILE GRID END-->
+<div id="dlh-m-swiper__slides__pager--destination-default" class="dlh-m-swiper__slides__pager dlh-m-swiper__slides__pager--tile-grid swiper-pagination-clickable"><span class="dlh-m-swiper__slides__pager__dot dlh-s-active"></span></div></json-editor-destination> 
+           </div> 
+           <!--LAYOUT: COL END--> 
+          </div> 
+          <!--LAYOUT: ROW END--> 
+         </div> 
+         <!--LAYOUT: COL END--> 
+        </div> 
+        <!--LAYOUT: ROW END--> 
+       </div> 
+       <!--LAYOUT: CONTAINER END--> 
+      </div> 
+      <div class="dlh-m-copyright t-size--9 t-colour--dlh-light-grey ng-scope" translate="TXT_IMAGE.COPYRIGHT">© Lufthansa Mediabase</div> 
+     </section> 
+     <!--MODULE: DLH SECTION - DESTINATION END--> 
+     <!--MODULE: ONEMEDIA BANNER START--> 
+     <widget-one-media wid="om-destination" uuid="15" class="pe-widget-applied ng-scope"><!--MODULE: ONEMEDIA BANNER START-->
+<!-- ngIf: params.shortLanguageCode --><div class="dlh-m-onemedia dlh-m-onemedia--section-banner dlh-ds-one-media--banner ng-scope" data-ds-label="Disabled - One Media" ng-if="params.shortLanguageCode" pe-one-media-banner="" om-options="{
+		icao: &#39;DLH&#39;,
+		width: params.zoneWidth,
+		height: params.zoneHeight,
+		zonePath: params.zonePath + &#39;_&#39; + params.shortLanguageCode
+	}" style="">
+
+	<!-- ngIf: templateProcessingState == 'loaded' --><div ng-if="templateProcessingState == &#39;loaded&#39;" class="ng-scope" style="">
+		<!-- ngIf: banner.destination_type === 'url' --><a ng-if="banner.destination_type === &#39;url&#39;" ng-href="http://services.inflightpanasonic.aero/inflight/services/one_media/v1/click?redirect=https%3A%2F%2Fflylufthansa.compensaid.com%2F&amp;ad_id=490315&amp;zone_path=b_destination_full1_en&amp;language_id=" target="_blank" class="ng-scope" href="http://services.inflightpanasonic.aero/inflight/services/one_media/v1/click?redirect=https%3A%2F%2Fflylufthansa.compensaid.com%2F&amp;ad_id=490315&amp;zone_path=b_destination_full1_en&amp;language_id=">
+			<img ng-src="http://services.inflightpanasonic.aero/inflight/services/one_media/v1/image?img=creatives/13298-32348/banner-13298-32348-2544x320.jpg&amp;ad_id=490315&amp;zone_path=b_destination_full1_en&amp;language_id=" src="./Lufthansa FlyNet_files/image">
+		</a><!-- end ngIf: banner.destination_type === 'url' -->
+		<!-- ngIf: banner.destination_type !== 'url' -->
+	</div><!-- end ngIf: templateProcessingState == 'loaded' -->
+
+</div><!-- end ngIf: params.shortLanguageCode -->
+<!--MODULE: ONEMEDIA BANNER END--></widget-one-media> 
+     <!--MODULE: ONEMEDIA BANNER END--> 
+     <!--MODULE: DLH SECTION - MY LUFTHANSA START--> 
+     <section-container id="MyLufthansa" class="ng-scope"><section class="dlh-m-section dlh-m-section-backgrounds" ng-style="{&#39;min-height&#39;:&#39;20px&#39;, &#39;height&#39;: data.sectionHeight + &#39;px&#39;, &#39;max-height&#39;: data.sectionHeight + &#39;px&#39;}" style="min-height: 20px;"><ng-transclude ng-transclude-slot="sectionConfig"><section-config class="ng-scope"> 
+       <widget-section-config wid="wscfg-mylufthansa" uuid="33" class="pe-widget-applied ng-scope" style="position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; z-index: 8;"><section-container-config class="ng-scope"></section-container-config></widget-section-config> 
+      </section-config></ng-transclude><!-- ngIf: data.backgroundSrc !== "" --><div ng-if="data.backgroundSrc !== &quot;&quot;" class="dlh-m-section-backgrounds__img" ng-style="{ &#39;background-image&#39;: &#39;url(&#39; + data.backgroundSrc + &#39;)&#39; }" style="background-image: url(&quot;project_media/portal_media/img/portal_modules/section_backgrounds/mylufthansa.jpg&quot;);"></div><!-- end ngIf: data.backgroundSrc !== "" --><!-- ngIf: (data.backgroundSrc === "" && (data.backgroundClass.length > 0 || data.backgroundCss.length > 0)) --><div class="container" style="z-index: 9; position: relative; margin-right: auto; margin-left: auto; top: -100%; width: 95%;"><div class="row"><div class="col-xs-12"><div class="dlh-m-section-backgrounds__content"><ng-transclude ng-transclude-slot="sectionContent"><section-content class="ng-scope"> 
+       <widget-header wid="header-mylufthansa" uuid="35" class="pe-widget-applied ng-scope"><header class="dlh-m-section__header t-header-h1 t-colour--white t-font-face--heading_bold t-text-shadow--1 h-ds-editable-field ng-scope" ng-style="{
+            &#39;min-height&#39;: &#39;78px&#39;,
+            &#39;max-height&#39;: params.headerHeight + &#39;px&#39;,
+            &#39;margin&#39;:
+                (params.headerMarginTop || 0) + &#39;px &#39; +
+                (params.headerMarginRight || 0) + &#39;px &#39; +
+                (params.headerMarginBottom || 0) + &#39;px &#39; +
+                (params.headerMarginLeft || 0) + &#39;px&#39;
+        }" translate="TXT_SECTION.TITLE.MY.LUFTHANSA" style="min-height: 78px; max-height: 80px; margin: 140px 10px 55px;">My Lufthansa</header></widget-header> 
+       <json-editor wid="swiper-mylufthansa" uuid="36" class="pe-widget-applied ng-scope"><!-- ngIf: params.breakPoint && params.name --><div ng-if="params.breakPoint &amp;&amp; params.name" class="ng-scope" style="">
+	<div class="dlh-m-tile-grid swiper-container ng-scope swiper-container-horizontal swiper-container-multirow" breakpoint="params.breakPoint" dlh-grid="" pew-swiper="" pe-json-listing="" ds-json-language-identifier="" data-ds-label="My Lufthansa tiles" json-url="en_GB/portal_media/json/mylufthansa.json" swiper-opts="{
+		setWrapperSize         : true,
+		nextButton             : &#39;.dlh-m-tile-grid__btn-nav--next--&#39;+ params.name ,
+		prevButton             : &#39;.dlh-m-tile-grid__btn-nav--previous--&#39;+ params.name ,
+		pagination             : &#39;#dlh-m-swiper__slides__pager--&#39;+ params.name ,
+		paginationActiveClass  : &#39;dlh-s-active&#39;,
+		paginationClickable    : true,
+		paginationVisibleClass : &#39;dlh-s-active&#39;,
+		slidesPerView          : &#39;auto&#39;,
+		slidesPerColumnFill    : &#39;column&#39;,
+		bulletClass            : &#39;dlh-m-swiper__slides__pager__dot&#39;,
+		bulletActiveClass      : &#39;dlh-s-active&#39;,
+		slidesPerColumn        : contGrid.gridColumns
+	}">
+	<div class="swiper-wrapper dlh-m-tile-grid__wrapper ng-scope" pew-swiper-wrapper="" dlh-swiper-row-sorter="" row-array="jsonData" breakpoint="params.breakPoint" style="width: 702px;">
+
+		<!-- ngRepeat: tile in rowCont.tileData --><div class="swiper-slide pull-left v2 ng-scope swiper-slide-active" ng-repeat="tile in rowCont.tileData" style="order: 0;" data-swiper-column="0" data-swiper-row="0">
+		  <!-- ngIf: contGrid.fd --><div ng-if="contGrid.fd" class="dlh-m-tile ng-scope ng-isolate-scope dlh-m-tile--solid dlh-m-tile--solid--grey" dlh-tile-item="" dlh-analytics="" ng-click="params.logExtras &amp;&amp; logExtras(params.logExtras, params.systemLang, tile)" tile="tile" deeplink-page="my-lufthansa" breakpoint="params.breakPoint" destination-city="contGrid.fd.destinationCity" current-lang="params.language" fd="contGrid.fd"><a ng-href="#/my-lufthansa/media/CONTENT/item/0" ng-class="{&#39;t-colour--white&#39;: (cont.tile.colour == &#39;BLUE&#39; || cont.tile.colour == &#39;ORANGE&#39; || cont.tile.image), &#39;t-colour--dlh-blue&#39;: (cont.tile.colour == &#39;WHITE&#39; &amp;&amp; !cont.tile.image)}" class="dlh-m-tile__container t-decoration--no-und t-colour--white h-overide--tap-highlight ng-scope t-colour--dlh-blue" href="http://www.lufthansa-flynet.com/#/my-lufthansa/media/CONTENT/item/0" style="">
+  <div class="dlh-m-tile__container__background" ng-class="{&#39;dlh-m-tile__container__background--image&#39;: cont.tile.image}" ng-style="cont.backgroundStyle"></div>
+  <div class="dlh-m-tile__container__content">
+    <!-- ngIf: !cont.tile.hidetitle --><div class="dlh-m-tile__container__content__title t-font-face--heading_bold ng-binding ng-scope" ng-if="!cont.tile.hidetitle" ng-bind-html="cont.tile.title|dlhNewline" style="">Electronic devices on board</div><!-- end ngIf: !cont.tile.hidetitle -->
+    <!-- ngIf: cont.tile.destSubTitle == 'true' -->
+    <div class="dlh-m-tile__container__content__copy t-font-face--light ng-binding" ng-bind-html="cont.tile.subtitle|dlhNewline"></div>
+  </div>
+</a></div><!-- end ngIf: contGrid.fd -->
+		</div><!-- end ngRepeat: tile in rowCont.tileData --><div class="swiper-slide pull-left v2 ng-scope swiper-slide-next" ng-repeat="tile in rowCont.tileData" data-swiper-column="0" data-swiper-row="1" style="-webkit-box-ordinal-group: 3; order: 3; margin-top: 0px;">
+		  <!-- ngIf: contGrid.fd --><div ng-if="contGrid.fd" class="dlh-m-tile ng-scope ng-isolate-scope dlh-m-tile--image" dlh-tile-item="" dlh-analytics="" ng-click="params.logExtras &amp;&amp; logExtras(params.logExtras, params.systemLang, tile)" tile="tile" deeplink-page="my-lufthansa" breakpoint="params.breakPoint" destination-city="contGrid.fd.destinationCity" current-lang="params.language" fd="contGrid.fd"><a ng-href="#/my-lufthansa/media/CONTENT/item/1" ng-class="{&#39;t-colour--white&#39;: (cont.tile.colour == &#39;BLUE&#39; || cont.tile.colour == &#39;ORANGE&#39; || cont.tile.image), &#39;t-colour--dlh-blue&#39;: (cont.tile.colour == &#39;WHITE&#39; &amp;&amp; !cont.tile.image)}" class="dlh-m-tile__container t-decoration--no-und t-colour--white h-overide--tap-highlight ng-scope" href="http://www.lufthansa-flynet.com/#/my-lufthansa/media/CONTENT/item/1">
+  <div class="dlh-m-tile__container__background dlh-m-tile__container__background--image" ng-class="{&#39;dlh-m-tile__container__background--image&#39;: cont.tile.image}" ng-style="cont.backgroundStyle" style="background-image: url(&quot;Menu-on-board-02.jpg&quot;);"></div>
+  <div class="dlh-m-tile__container__content">
+    <!-- ngIf: !cont.tile.hidetitle --><div class="dlh-m-tile__container__content__title t-font-face--heading_bold ng-binding ng-scope" ng-if="!cont.tile.hidetitle" ng-bind-html="cont.tile.title|dlhNewline" style="">Menus on board</div><!-- end ngIf: !cont.tile.hidetitle -->
+    <!-- ngIf: cont.tile.destSubTitle == 'true' -->
+    <div class="dlh-m-tile__container__content__copy t-font-face--light ng-binding" ng-bind-html="cont.tile.subtitle|dlhNewline">Treat yourself</div>
+  </div>
+</a></div><!-- end ngIf: contGrid.fd -->
+		</div><!-- end ngRepeat: tile in rowCont.tileData --><div class="swiper-slide pull-left v2 ng-scope" ng-repeat="tile in rowCont.tileData" data-swiper-column="1" data-swiper-row="0" style="-webkit-box-ordinal-group: 1; order: 1;">
+		  <!-- ngIf: contGrid.fd --><div ng-if="contGrid.fd" class="dlh-m-tile ng-scope ng-isolate-scope dlh-m-tile--image" dlh-tile-item="" dlh-analytics="" ng-click="params.logExtras &amp;&amp; logExtras(params.logExtras, params.systemLang, tile)" tile="tile" deeplink-page="my-lufthansa" breakpoint="params.breakPoint" destination-city="contGrid.fd.destinationCity" current-lang="params.language" fd="contGrid.fd"><a ng-href="#/my-lufthansa/media/CONTENT/item/3" ng-class="{&#39;t-colour--white&#39;: (cont.tile.colour == &#39;BLUE&#39; || cont.tile.colour == &#39;ORANGE&#39; || cont.tile.image), &#39;t-colour--dlh-blue&#39;: (cont.tile.colour == &#39;WHITE&#39; &amp;&amp; !cont.tile.image)}" class="dlh-m-tile__container t-decoration--no-und t-colour--white h-overide--tap-highlight ng-scope" href="http://www.lufthansa-flynet.com/#/my-lufthansa/media/CONTENT/item/3">
+  <div class="dlh-m-tile__container__background dlh-m-tile__container__background--image" ng-class="{&#39;dlh-m-tile__container__background--image&#39;: cont.tile.image}" ng-style="cont.backgroundStyle" style="background-image: url(&quot;Vacant-seat-01.jpg&quot;);"></div>
+  <div class="dlh-m-tile__container__content">
+    <!-- ngIf: !cont.tile.hidetitle --><div class="dlh-m-tile__container__content__title t-font-face--heading_bold ng-binding ng-scope" ng-if="!cont.tile.hidetitle" ng-bind-html="cont.tile.title|dlhNewline" style="">More comfort and relaxation</div><!-- end ngIf: !cont.tile.hidetitle -->
+    <!-- ngIf: cont.tile.destSubTitle == 'true' -->
+    <div class="dlh-m-tile__container__content__copy t-font-face--light ng-binding" ng-bind-html="cont.tile.subtitle|dlhNewline">Plenty of extra space</div>
+  </div>
+</a></div><!-- end ngIf: contGrid.fd -->
+		</div><!-- end ngRepeat: tile in rowCont.tileData --><div class="swiper-slide pull-left v2 ng-scope" ng-repeat="tile in rowCont.tileData" data-swiper-column="1" data-swiper-row="1" style="-webkit-box-ordinal-group: 4; order: 4; margin-top: 0px;">
+		  <!-- ngIf: contGrid.fd --><div ng-if="contGrid.fd" class="dlh-m-tile ng-scope ng-isolate-scope dlh-m-tile--image dlh-m-onemedia no-opacity" dlh-tile-item="" dlh-analytics="" ng-click="params.logExtras &amp;&amp; logExtras(params.logExtras, params.systemLang, tile)" tile="tile" deeplink-page="my-lufthansa" breakpoint="params.breakPoint" destination-city="contGrid.fd.destinationCity" current-lang="params.language" fd="contGrid.fd"><div class="dlh-m-tile dlh-m-tile--image h-margin-bottom--4 dlh-m-onemedia no-opacity dlh-ds-one-media--tile ng-scope" pe-one-media-banner="" om-options="{
+    icao: &#39;DLH&#39;,
+    height: cont.tile.height,
+    width: cont.tile.width,
+    zonePath: cont.tile.zone_path
+  }">
+  <!-- ngIf: templateProcessingState == 'loaded' --><div ng-if="templateProcessingState == &#39;loaded&#39;" class="ng-scope" style="">
+    <!-- ngIf: banner.destination_type === 'url' -->
+    <!-- ngIf: banner.destination_type !== 'url' --><div class="dlh-m-tile__container t-decoration--no-und t-colour--white h-overide--tap-highlight ng-scope" ng-if="banner.destination_type !== &#39;url&#39;" ng-href="http://services.inflightpanasonic.aero/inflight/services/one_media/v1/click?redirect=&amp;ad_id=490317&amp;zone_path=b_coandserv_tile1_en&amp;language_id=" target="_blank" href="http://services.inflightpanasonic.aero/inflight/services/one_media/v1/click?redirect=&amp;ad_id=490317&amp;zone_path=b_coandserv_tile1_en&amp;language_id=">
+      <div class="dlh-m-tile__container__background dlh-m-tile__container__background--image" data-ds-label="Disabled - One Media" ng-style="{&#39;background-image&#39;: &#39;url(&#39;+banner.content_url +&#39;)&#39;}" style="background-image: url(&quot;http://services.inflightpanasonic.aero/inflight/services/one_media/v1/image?img=creatives/13424-32698/banner-13424-32698-230x230.jpg&amp;ad_id=490317&amp;zone_path=b_coandserv_tile1_en&amp;language_id=&quot;);"></div>
+    </div><!-- end ngIf: banner.destination_type !== 'url' -->
+  </div><!-- end ngIf: templateProcessingState == 'loaded' -->
+</div></div><!-- end ngIf: contGrid.fd -->
+		</div><!-- end ngRepeat: tile in rowCont.tileData --><div class="swiper-slide pull-left v2 ng-scope" ng-repeat="tile in rowCont.tileData" data-swiper-column="2" data-swiper-row="0" style="-webkit-box-ordinal-group: 2; order: 2;">
+		  <!-- ngIf: contGrid.fd --><div ng-if="contGrid.fd" class="dlh-m-tile ng-scope ng-isolate-scope dlh-m-tile--image" dlh-tile-item="" dlh-analytics="" ng-click="params.logExtras &amp;&amp; logExtras(params.logExtras, params.systemLang, tile)" tile="tile" deeplink-page="my-lufthansa" breakpoint="params.breakPoint" destination-city="contGrid.fd.destinationCity" current-lang="params.language" fd="contGrid.fd"><a ng-href="#/my-lufthansa/media/CONTENT/item/2" ng-class="{&#39;t-colour--white&#39;: (cont.tile.colour == &#39;BLUE&#39; || cont.tile.colour == &#39;ORANGE&#39; || cont.tile.image), &#39;t-colour--dlh-blue&#39;: (cont.tile.colour == &#39;WHITE&#39; &amp;&amp; !cont.tile.image)}" class="dlh-m-tile__container t-decoration--no-und t-colour--white h-overide--tap-highlight ng-scope" href="http://www.lufthansa-flynet.com/#/my-lufthansa/media/CONTENT/item/2">
+  <div class="dlh-m-tile__container__background dlh-m-tile__container__background--image" ng-class="{&#39;dlh-m-tile__container__background--image&#39;: cont.tile.image}" ng-style="cont.backgroundStyle" style="background-image: url(&quot;LHA_Green-Fares_Native_230x230px.jpg&quot;);"></div>
+  <div class="dlh-m-tile__container__content">
+    <!-- ngIf: !cont.tile.hidetitle --><div class="dlh-m-tile__container__content__title t-font-face--heading_bold ng-binding ng-scope" ng-if="!cont.tile.hidetitle" ng-bind-html="cont.tile.title|dlhNewline" style="">Sustainability</div><!-- end ngIf: !cont.tile.hidetitle -->
+    <!-- ngIf: cont.tile.destSubTitle == 'true' -->
+    <div class="dlh-m-tile__container__content__copy t-font-face--light ng-binding" ng-bind-html="cont.tile.subtitle|dlhNewline">Connecting the world. Protecting its future.</div>
+  </div>
+</a></div><!-- end ngIf: contGrid.fd -->
+		</div><!-- end ngRepeat: tile in rowCont.tileData --><div class="swiper-slide pull-left v2 ng-scope" ng-repeat="tile in rowCont.tileData" data-swiper-column="2" data-swiper-row="1" style="-webkit-box-ordinal-group: 5; order: 5; margin-top: 0px;">
+		  <!-- ngIf: contGrid.fd --><div ng-if="contGrid.fd" class="dlh-m-tile ng-scope ng-isolate-scope dlh-m-tile--image" dlh-tile-item="" dlh-analytics="" ng-click="params.logExtras &amp;&amp; logExtras(params.logExtras, params.systemLang, tile)" tile="tile" deeplink-page="my-lufthansa" breakpoint="params.breakPoint" destination-city="contGrid.fd.destinationCity" current-lang="params.language" fd="contGrid.fd"><a ng-href="#/my-lufthansa/media/CONTENT/item/4" ng-class="{&#39;t-colour--white&#39;: (cont.tile.colour == &#39;BLUE&#39; || cont.tile.colour == &#39;ORANGE&#39; || cont.tile.image), &#39;t-colour--dlh-blue&#39;: (cont.tile.colour == &#39;WHITE&#39; &amp;&amp; !cont.tile.image)}" class="dlh-m-tile__container t-decoration--no-und t-colour--white h-overide--tap-highlight ng-scope" href="http://www.lufthansa-flynet.com/#/my-lufthansa/media/CONTENT/item/4">
+  <div class="dlh-m-tile__container__background dlh-m-tile__container__background--image" ng-class="{&#39;dlh-m-tile__container__background--image&#39;: cont.tile.image}" ng-style="cont.backgroundStyle" style="background-image: url(&quot;sleepers-row-01.jpg&quot;);"></div>
+  <div class="dlh-m-tile__container__content">
+    <!-- ngIf: !cont.tile.hidetitle --><div class="dlh-m-tile__container__content__title t-font-face--heading_bold ng-binding ng-scope" ng-if="!cont.tile.hidetitle" ng-bind-html="cont.tile.title|dlhNewline" style="">Lufthansa Sleeper’s Row</div><!-- end ngIf: !cont.tile.hidetitle -->
+    <!-- ngIf: cont.tile.destSubTitle == 'true' -->
+    <div class="dlh-m-tile__container__content__copy t-font-face--light ng-binding" ng-bind-html="cont.tile.subtitle|dlhNewline">More space on long-haul flights</div>
+  </div>
+</a></div><!-- end ngIf: contGrid.fd -->
+		</div><!-- end ngRepeat: tile in rowCont.tileData -->
+	</div>
+	<!--SWIPER WRAPPER END-->
+
+	<a class="dlh-m-tile-grid__btn-nav--previous dlh-m-tile-grid__btn-nav--previous--mylufthansa btn-disabled swiper-button-disabled" ng-click="swiper.swipePrev()" ng-class="{ &#39;btn-disabled&#39; : swiper.isBeginning}">
+		<span class="dlh-m-icon dlh-m-icon--swiper-previous"></span>
+	</a>
+	<a class="dlh-m-tile-grid__btn-nav--next dlh-m-tile-grid__btn-nav--next--mylufthansa btn-disabled swiper-button-disabled" ng-click="swiper.swipeNext()" ng-class="{ &#39;btn-disabled&#39; : swiper.isEnd}">
+		<span class="dlh-m-icon dlh-m-icon--swiper-next"></span>
+	</a>
+
+</div>
+
+
+</div><!-- end ngIf: params.breakPoint && params.name -->
+
+<!--MODULE: DLH TILE GRID END-->
+<div id="dlh-m-swiper__slides__pager--mylufthansa" class="dlh-m-swiper__slides__pager dlh-m-swiper__slides__pager--tile-grid swiper-pagination-clickable" style="display: none;"><span class="dlh-m-swiper__slides__pager__dot dlh-s-active"></span></div></json-editor> 
+      </section-content></ng-transclude></div></div></div></div></section></section-container> 
+     <!--MODULE: DLH SECTION - MY LUFTHANSA END--> 
+     <!--MODULE: ONEMEDIA BANNER START--> 
+     <widget-one-media wid="om-lufthansa" uuid="16" class="pe-widget-applied ng-scope"><!--MODULE: ONEMEDIA BANNER START-->
+<!-- ngIf: params.shortLanguageCode --><div class="dlh-m-onemedia dlh-m-onemedia--section-banner dlh-ds-one-media--banner ng-scope" data-ds-label="Disabled - One Media" ng-if="params.shortLanguageCode" pe-one-media-banner="" om-options="{
+		icao: &#39;DLH&#39;,
+		width: params.zoneWidth,
+		height: params.zoneHeight,
+		zonePath: params.zonePath + &#39;_&#39; + params.shortLanguageCode
+	}" style="">
+
+	<!-- ngIf: templateProcessingState == 'loaded' --><div ng-if="templateProcessingState == &#39;loaded&#39;" class="ng-scope">
+		<!-- ngIf: banner.destination_type === 'url' -->
+		<!-- ngIf: banner.destination_type !== 'url' --><div ng-if="banner.destination_type !== &#39;url&#39;" class="ng-scope">
+			<img ng-src="http://services.inflightpanasonic.aero/inflight/services/one_media/v1/image?img=creatives/13305-32355/banner-13305-32355-2544x320.jpg&amp;ad_id=490319&amp;zone_path=b_lufthansa_full1_en&amp;language_id=" src="./Lufthansa FlyNet_files/image(1)">
+		</div><!-- end ngIf: banner.destination_type !== 'url' -->
+	</div><!-- end ngIf: templateProcessingState == 'loaded' -->
+
+</div><!-- end ngIf: params.shortLanguageCode -->
+<!--MODULE: ONEMEDIA BANNER END--></widget-one-media> 
+     <!--MODULE: ONEMEDIA BANNER END--> 
+     <!--      Removed the below block to remove sections shopping and entertainment as per FlyNet Update OCT 2020 request 
+     MODULE: DLH SECTION - SHOPPING START 
+     <section-container id="Shopping"> 
+      SECTION CONFIG  
+      <section-config> 
+       <widget-section-config pe-widget="" wid="wscfg-shopping"></widget-section-config> 
+      </section-config> 
+      SECTION CONTENT 
+      <section-content> 
+       <widget-header pe-widget="" wid="header-shopping"></widget-header> 
+       <json-editor pe-widget="" wid="swiper-shopping"> 
+        <config> 
+         <params> 
+          <param name="language" type="binding" value="langCtrl.language.code"> 
+          <param name="breakPoint" type="binding" value="media.breakpoint"> 
+          <param name="systemLang" type="binding" value="systemLang"> 
+          <param name="name" type="dynamic" value="shopping"> 
+          <param name="jsonurl" type="dynamic" value="{{langCtrl.language.code}}/portal_media/json/shopping.json"> 
+          <param name="deeplinkPage" type="dynamic" value="shopping"> 
+          <param name="logExtras" type="dynamic" value="Shopping"> 
+         </params> 
+        </config> 
+       </json-editor> 
+      </section-content> 
+     </section-container> 
+     MODULE: DLH SECTION - SHOPPING END 
+     MODULE: ONEMEDIA BANNER START 
+     <widget-one-media pe-widget="" wid="om-shopping"> 
+      <config> 
+       <params> 
+        <param name="shortLanguageCode" type="binding" value="langCtrl.language.shortLanguageCode"> 
+       </params> 
+      </config> 
+     </widget-one-media> 
+     MODULE: ONEMEDIA BANNER END 
+     MODULE: DLH SECTION - ENTERTAINMENT START 
+     <section-container id="Entertainment"> 
+      SECTION CONFIG  
+      <section-config> 
+       <widget-section-config pe-widget="" wid="wscfg-entertainment"></widget-section-config> 
+      </section-config> 
+      SECTION CONTENT 
+      <section-content> 
+       <widget-header pe-widget="" wid="header-entertainment"></widget-header> 
+       <json-editor pe-widget="" wid="swiper-entertainment"> 
+        <config> 
+         <params> 
+          <param name="language" type="binding" value="langCtrl.language.code"> 
+          <param name="breakPoint" type="binding" value="media.breakpoint"> 
+          <param name="systemLang" type="binding" value="systemLang"> 
+          <param name="name" type="dynamic" value="entertainment"> 
+          <param name="jsonurl" type="dynamic" value="{{langCtrl.language.code}}/portal_media/json/entertainment.json"> 
+          <param name="deeplinkPage" type="dynamic" value="entertainment-inspiration"> 
+          <param name="logExtras" type="dynamic" value="Entertainment"> 
+         </params> 
+        </config> 
+       </json-editor> 
+      </section-content> 
+     </section-container> 
+     MODULE: DLH SECTION - ENTERTAINMENT END 
+     MODULE: ONEMEDIA BANNER START 
+     <widget-one-media pe-widget="" wid="om-entertainment"> 
+      <config> 
+       <params> 
+        <param name="shortLanguageCode" type="binding" value="langCtrl.language.shortLanguageCode"> 
+       </params> 
+      </config> 
+     </widget-one-media> 
+     MODULE: ONEMEDIA BANNER END
+      --> 
+     <!--MODULE: DLH NEWS SECTION START--> 
+     <section-container id="News" class="ng-scope"><section class="dlh-m-section dlh-m-section-backgrounds" ng-style="{&#39;min-height&#39;:&#39;20px&#39;, &#39;height&#39;: data.sectionHeight + &#39;px&#39;, &#39;max-height&#39;: data.sectionHeight + &#39;px&#39;}" style="min-height: 20px; height: 482px; max-height: 482px;"><ng-transclude ng-transclude-slot="sectionConfig"><section-config class="ng-scope"> 
+       <widget-section-config wid="wscfg-news" uuid="40" class="pe-widget-applied ng-scope" style="position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; z-index: 8;"><section-container-config class="ng-scope"></section-container-config></widget-section-config> 
+      </section-config></ng-transclude><!-- ngIf: data.backgroundSrc !== "" --><div ng-if="data.backgroundSrc !== &quot;&quot;" class="dlh-m-section-backgrounds__img dlh-m-section-backgrounds--news" ng-style="{ &#39;background-image&#39;: &#39;url(&#39; + data.backgroundSrc + &#39;)&#39; }" style="background-image: url(&quot;project_media/portal_media/img/portal_modules/section_backgrounds/news.jpg&quot;);"></div><!-- end ngIf: data.backgroundSrc !== "" --><!-- ngIf: (data.backgroundSrc === "" && (data.backgroundClass.length > 0 || data.backgroundCss.length > 0)) --><div class="container" style="z-index: 9; position: relative; margin-right: auto; margin-left: auto; top: -100%; width: 95%;"><div class="row"><div class="col-xs-12"><div class="dlh-m-section-backgrounds__content"><ng-transclude ng-transclude-slot="sectionContent"><section-content class="ng-scope"> 
+       <widget-header wid="header-news" uuid="42" class="pe-widget-applied ng-scope"><header class="dlh-m-section__header t-header-h1 t-colour--white t-font-face--heading_bold t-text-shadow--1 h-ds-editable-field ng-scope" ng-style="{
+            &#39;min-height&#39;: &#39;78px&#39;,
+            &#39;max-height&#39;: params.headerHeight + &#39;px&#39;,
+            &#39;margin&#39;:
+                (params.headerMarginTop || 0) + &#39;px &#39; +
+                (params.headerMarginRight || 0) + &#39;px &#39; +
+                (params.headerMarginBottom || 0) + &#39;px &#39; +
+                (params.headerMarginLeft || 0) + &#39;px&#39;
+        }" translate="TXT_SECTION.TITLE.NEWS" style="min-height: 78px; max-height: 80px; margin: 340px 10px 55px;">News</header></widget-header> 
+      </section-content></ng-transclude></div></div></div></div></section></section-container> 
+     <!--MODULE: DLH NEWS SECTION START--> 
+     <div dlh-news-categories="" provider-id="1" class="ng-scope"> 
+      <!-- ngIf: newsCategoriesCont.templateProcessingState == 'loading' --> 
+      <!-- ngIf: newsCategoriesCont.templateProcessingState == 'error' --><div ng-if="newsCategoriesCont.templateProcessingState == &#39;error&#39;" class="h-ds-hide ng-scope" translate="TXT_STATUS.SERVICE.NOT.AVAILABLE">Sorry, service not available at this time</div><!-- end ngIf: newsCategoriesCont.templateProcessingState == 'error' --> 
+      <!-- ngIf: newsCategoriesCont.templateProcessingState == 'loaded' --> 
+      <!--LOADED END--> 
+     </div> 
+     <!--PE-NEWS-CATEGORIES END--> 
+     <!--MODULE: ONEMEDIA BANNER START--> 
+     <widget-one-media wid="om-news" uuid="17" class="pe-widget-applied ng-scope"><!--MODULE: ONEMEDIA BANNER START-->
+<!-- ngIf: params.shortLanguageCode --><div class="dlh-m-onemedia dlh-m-onemedia--section-banner dlh-ds-one-media--banner ng-scope" data-ds-label="Disabled - One Media" ng-if="params.shortLanguageCode" pe-one-media-banner="" om-options="{
+		icao: &#39;DLH&#39;,
+		width: params.zoneWidth,
+		height: params.zoneHeight,
+		zonePath: params.zonePath + &#39;_&#39; + params.shortLanguageCode
+	}" style="">
+
+	<!-- ngIf: templateProcessingState == 'loaded' -->
+
+</div><!-- end ngIf: params.shortLanguageCode -->
+<!--MODULE: ONEMEDIA BANNER END--></widget-one-media> 
+     <!--MODULE: ONEMEDIA BANNER END--> 
+     <!--MODULE: DLH FOOTER START--> 
+     <footer class="dlh-m-footer"> 
+      <!--LAYOUT: CONTAINER START--> 
+      <div class="container"> 
+       <!--LAYOUT: ROW START--> 
+       <div class="row"> 
+        <!--LAYOUT: COL START--> 
+        <div class="col-xs-12 itk-h-text-center"> 
+         <a back-to-top="" class="t-size--16 t-decoration--no-und t-colour--dlh-blue t-colour--dlh-light-grey--active h-trans-point3s h-display--inline-block h-margin-top--60 h-ds-editable-field" href="http://www.lufthansa-flynet.com/#"> <span class="dlh-m-icon dlh-m-icon--anchor-up"></span> <span translate="TXT_BUTTON.BACK.TO.TOP" class="ng-scope">Back to top</span> </a> 
+         <!--LAYOUT: ROW START--> 
+         <div class="row"> 
+          <footer-json wid="footer.json" uuid="18" class="pe-widget-applied ng-scope"><div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
+
+	<div class="dlh-m-footer__links itk-h-text-center h-margin-top--60 h-padding-bottom--30 ng-scope" pe-json-listing="" json-url="en_GB/portal_media/json/footer.json" ds-json-language-identifier="params.language" data-ds-label="Footer content">
+		<!-- ngIf: templateProcessingState === 'loaded' --><div ng-if="templateProcessingState === &#39;loaded&#39;" class="ng-scope" style="">
+			<ul class="itk-m-list-unsigned itk-h-text-center h-margin-bottom--0 ng-scope" dlh-swiper-row-sorter="" row-array="jsonData" breakpoint="params.breakpoint">
+				<!-- ngRepeat: link in rowCont.tileData --><span ng-repeat="link in rowCont.tileData" class="ng-scope">
+					<li>
+						<a class="t-size--16 t-decoration--no-und t-colour--dlh-blue t-colour--dlh-light-grey--active h-trans-point3s h-ds-editable-field ng-binding" ng-href="#footer/media/CONTENT/item/0" href="http://www.lufthansa-flynet.com/#footer/media/CONTENT/item/0">FAQ</a>
+					</li>
+					<!-- ngIf: $index == 1 -->
+				</span><!-- end ngRepeat: link in rowCont.tileData --><span ng-repeat="link in rowCont.tileData" class="ng-scope">
+					<li>
+						<a class="t-size--16 t-decoration--no-und t-colour--dlh-blue t-colour--dlh-light-grey--active h-trans-point3s h-ds-editable-field ng-binding" ng-href="#footer/media/CONTENT/item/1" href="http://www.lufthansa-flynet.com/#footer/media/CONTENT/item/1">Imprint</a>
+					</li>
+					<!-- ngIf: $index == 1 --><br ng-if="$index == 1" class="ng-scope"><!-- end ngIf: $index == 1 -->
+				</span><!-- end ngRepeat: link in rowCont.tileData --><span ng-repeat="link in rowCont.tileData" class="ng-scope">
+					<li>
+						<a class="t-size--16 t-decoration--no-und t-colour--dlh-blue t-colour--dlh-light-grey--active h-trans-point3s h-ds-editable-field ng-binding" ng-href="#footer/media/CONTENT/item/2" href="http://www.lufthansa-flynet.com/#footer/media/CONTENT/item/2">Legal Notice</a>
+					</li>
+					<!-- ngIf: $index == 1 -->
+				</span><!-- end ngRepeat: link in rowCont.tileData --><span ng-repeat="link in rowCont.tileData" class="ng-scope">
+					<li>
+						<a class="t-size--16 t-decoration--no-und t-colour--dlh-blue t-colour--dlh-light-grey--active h-trans-point3s h-ds-editable-field ng-binding" ng-href="#footer/media/CONTENT/item/3" href="http://www.lufthansa-flynet.com/#footer/media/CONTENT/item/3">Privacy Statement</a>
+					</li>
+					<!-- ngIf: $index == 1 -->
+				</span><!-- end ngRepeat: link in rowCont.tileData -->
+
+			</ul>
+		</div><!-- end ngIf: templateProcessingState === 'loaded' -->
+	</div>
+</div></footer-json> 
+         </div> 
+         <!--LAYOUT: ROW END--> 
+         <!--LAYOUT: ROW START--> 
+         <div class="row"> 
+          <!--LAYOUT: COL START--> 
+          <div class="col-xs-12 itk-h-text-center"> 
+           <background-image wid="bi-002" uuid="19" class="pe-widget-applied ng-scope"> 
+             <div back-to-top="" class="dlh-m-footer__logo h-display--inline-block h-margin-bottom--30" style="background-image: url(&#39;project_media/portal_media/img/portal_modules/footer/@x2/logo_staralliance.png&#39;);"></div> 
+            </background-image> 
+          </div> 
+          <!--LAYOUT: COL END--> 
+         </div> 
+         <!--LAYOUT: ROW END--> 
+        </div> 
+        <!--LAYOUT: COL END--> 
+       </div> 
+       <!--LAYOUT: ROW END--> 
+      </div> 
+      <!--LAYOUT: CONTAINER END--> 
+     </footer> 
+     <!--MODULE: DLH FOOTER END--> 
+    </div> 
+    <!--MODULE: DLH HOMEPAGE SECTION CONTANIER - END--> 
+   </div> 
+   <!--WRAPPER END--> 
+   <!--PSEUDO PAGE WRAPPER START--> 
+   <!-- ngView: --><div class="pe-pseudo-page-wrapper h-height-100 ng-scope" ng-view=""><div class="dlh-m-deep-site-content h-ds-show ng-scope">
+	<!-- SB-DS: NOTE START-->
+	<!--LAYOUT: CONTAINER START-->
+	<div class="container">
+		<span class="dlh-ds-media__label" data-ds-label="Please use the &#39;Master Page&#39; to edit the Home page"></span>
+	</div>
+	<!-- SB-DS: NOTE END-->
+</div></div> 
+   <!--PSEUDO PAGE WRAPPER END--> 
+  </div> 
+  <!--ENGINE: DLH pe-master-page END-->  
+ 
+</body></html>

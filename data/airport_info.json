@@ -1,0 +1,52 @@
+[
+    {
+        "response_code": 200,
+        "body": {
+            "icao": "KORD",
+            "iata": "ORD",
+            "airport": "Chicago O'Hare International Apt",
+            "city": {
+                "en": "Chicago IL ",
+                "fr": "Chicago IL ",
+                "ja": "シカゴ",
+                "de": "Chicago",
+                "zh-cn": "芝加哥",
+                "ar": "ﻮﻏﺎﻜﻴـﺷ",
+                "zh-tw": "芝加哥",
+                "es": "Chicago",
+                "it": "Chicago",
+                "ko": "시카고",
+                "pt": "Chicago",
+                "tr": "Şikago",
+                "th": "ชิคาโก",
+                "nl": "Chicago",
+                "he": "שיקגו",
+                "hi": "शिकागो",
+                "ru": "Чикаго",
+                "vi": "Chicago"
+            },
+            "country": "US",
+            "timediv": "03",
+            "state": "IL",
+            "type": "A",
+            "gmtvar": "-0600",
+            "dstvar1": "-0500",
+            "dststtm1": "0200",
+            "dststdt1": "110313",
+            "dststst1": "K",
+            "dstedtm1": "0200",
+            "dsteddt1": "111106",
+            "dstedst1": "K",
+            "dataind": "02",
+            "dstvar2": "-0500",
+            "dststtm2": "0200",
+            "dststdt2": "120311",
+            "dststst2": "K",
+            "dstedtm2": "0200",
+            "dsteddt2": "121104",
+            "dstdsst2": "K",
+            "latt": "41.58.43N",
+            "long": "087.54.17W"
+        }
+    }
+]
