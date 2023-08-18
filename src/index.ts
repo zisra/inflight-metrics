@@ -27,7 +27,7 @@ let timeRemaining: string;
 if (minutesRemaining < 60) {
 	timeRemaining = `0:${minutesRemaining}`;
 } else {
-	timeRemaining = `${(minutesRemaining / 60).toFixed()}:${addTrailingZero(
+	timeRemaining = `${Math.floor(minutesRemaining / 60)}:${addTrailingZero(
 		minutesRemaining % 60
 	)}`;
 }
